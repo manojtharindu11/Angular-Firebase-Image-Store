@@ -21,7 +21,7 @@ export class AppComponent {
       const path = `image/${file.name}`;
       const uploadTask = await this.fireStorage.upload(path,file)
       const url = await uploadTask.ref.getDownloadURL();
-      this.imageUrl = url;
+      this.imageUrl = url
     }
   }
 }
